@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Bookings - 100SMILES Dental Care</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+  <div class="header-wrapper">
+    <img src="images/AdobeStock_283903376.jpeg" alt="100SMILES Logo" class="logo">
+
+    <div class="header-text">
+      <h1>CONTACT & BOOKINGS</h1>
+      <div class="header-underline"></div>
+      <p>Professional, Friendly & Reliable Dental Care</p>
+    </div>
+  </div>
+</header>
+
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="articles.html">Articles</a>
+    <a href="contact.html" class="active">Contact &amp; Bookings</a>
+  </nav>
+
+  <main>
+    <section class="contact-info">
+      <h2>Get in Touch</h2>
+      <p>Whether you’re booking an appointment or have a general enquiry, our friendly team is ready to assist you.</p>
+
+      <ul>
+        <li><strong>Address:</strong> 33 Fantail Street, Razole, QLD</li>
+        <li><strong>Phone:</strong> <a href="tel:0750005599">07 5000 5599</a></li>
+        <li><strong>Fax:</strong> 07 4567 9999</li>
+        <li><strong>Email:</strong> <a href="mailto:admin@100smilesdentalcare.com.au">admin@100smilesdentalcare.com.au</a></li>
+      </ul>
+
+      <h3>Opening Hours</h3>
+      <ul>
+        <li>Monday – Friday: 8:30 AM – 6:30 PM</li>
+        <li>Saturday – Sunday: 8:30 AM – 1:00 PM</li>
+      </ul>
+    </section>
+
+    <section id="booking" class="form-section">
+      <h2>Online Booking Form</h2>
+      <p>Book your appointment online and receive a <strong>25% discount</strong> on your next dental visit.</p>
+
+      <form id="bookingForm" novalidate>
+        <div class="form-row">
+          <label for="fullName">Full Name<span class="required">*</span></label>
+          <input type="text" id="fullName" name="fullName" required>
+          <span class="error" id="nameError"></span>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email Address<span class="required">*</span></label>
+          <input type="email" id="email" name="email" required>
+          <span class="error" id="emailError"></span>
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Phone Number<span class="required">*</span></label>
+          <input type="tel" id="phone" name="phone" placeholder="e.g. 07 5000 5599" required>
+          <span class="error" id="phoneError"></span>
+        </div>
+
+        <div class="form-row">
+          <label for="appointmentType">Appointment Type<span class="required">*</span></label>
+          <select id="appointmentType" name="appointmentType" required>
+            <option value="">-- Please select --</option>
+            <option value="checkup">Regular Check-Up</option>
+            <option value="annual">Annual Dental Check-Up Package</option>
+            <option value="cosmetic">Cosmetic Dentistry Consultation</option>
+            <option value="orthodontic">Orthodontic Consultation</option>
+            <option value="emergency">Emergency Appointment</option>
+          </select>
+          <span class="error" id="typeError"></span>
+        </div>
+
+        <div class="form-row">
+          <label for="preferredDate">Preferred Date<span class="required">*</span></label>
+          <input type="date" id="preferredDate" name="preferredDate" required>
+          <span class="error" id="dateError"></span>
+        </div>
+
+        <div class="form-row">
+          <label>Preferred Time</label>
+          <div class="inline-options">
+            <label><input type="radio" name="timeOfDay" value="morning" checked> Morning</label>
+            <label><input type="radio" name="timeOfDay" value="afternoon"> Afternoon</label>
+            <label><input type="radio" name="timeOfDay" value="evening"> Evening</label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="preferredDentist">Preferred Dentist</label>
+          <select id="preferredDentist" name="preferredDentist">
+            <option value="">No preference</option>
+            <option value="grey">Dr Johanna Grey</option>
+            <option value="carter">Dr Emily Carter</option>
+            <option value="sloan">Dr Benedict Sloan</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label>Services of Interest</label>
+          <div class="inline-options">
+            <label><input type="checkbox" name="services" value="whitening"> Teeth Whitening</label>
+            <label><input type="checkbox" name="services" value="implants"> Implants</label>
+            <label><input type="checkbox" name="services" value="braces"> Braces / Aligners</label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Additional Information</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us anything we should know before your visit."></textarea>
+        </div>
+
+        <button type="submit" class="btn primary">Submit Booking Request</button>
+        <p class="form-success" id="formSuccess" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="map">
+      <h2>Find Us</h2>
+      <p>We are conveniently located in Razole and are easily accessible for families and individuals in the surrounding area.</p>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3538.476451305466!2d151.209295!3d-33.868819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae3c2b0c2f8f%3A0x5017d681632cd60!2sRazole%20Queensland!5e0!3m2!1sen!2sau!4v1697399999999!5m2!1sen!2sau"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 100SMILES Dental Care | 33 Fantail Street, Razole, QLD |
+      Phone: <a href="tel:0750005599">07 5000 5599</a> |
+      Email: <a href="mailto:admin@100smilesdentalcare.com.au">admin@100smilesdentalcare.com.au</a>
+    </p>
+  </footer>
+
+  <script src="js/form-validation.js"></script>
+</body>
+
+</html>
